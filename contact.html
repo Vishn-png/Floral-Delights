@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="contact.css">
+
+    <title>Contact</title>
+</head>
+<body>
+    <div class="page-header">
+        <div class="container text-center">
+          <a class="navbar-brand"></a>
+            <img src="Images/logo.jpg" alt="logo"><h1> Floral Delights</h1> 
+            <canvas id="myCanvas" width="310" height="80">
+            </canvas>     
+        </div>
+      </div>
+      
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li class="active"><a href="flowers.html">Flowers</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+        <li>
+          <div class="input-group">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">
+                <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </span>
+            <input type="text" class="form-control" placeholder="Search...">
+          </div><!-- /input-group -->
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+   <div class="container">
+   
+    <p>Please fill out the form below to get in touch with us.</p>
+    <form class="form-inline">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+    
+    <div class="container">
+      <h1>Contact Us</h1>
+      <h2>Address</h2>
+      <p>123 Main Street<br>
+      City, State Zip Code<br>
+      Phone: 123-456-7890</p>
+      </div>
+      <div id="map">
+      <!-- Google Map will be displayed here -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3190.549067404992!2d174.84910257571326!3d-36.901134472218565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d4963f7c76b21%3A0x56eab14eeebaf582!2s1%2F23%20Cleary%20Road%2C%20Panmure%2C%20Auckland%201060!5e0!3m2!1sen!2snz!4v1718749692108!5m2!1sen!2snz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+</div>
+ 
+
+   
+      
+<footer class="container-fluid text-center">
+  
+  <form class="form-inline">Get deals:
+    <input type="email" class="form-control" size="50" placeholder="Email Address">
+    <button type="button" class="btn btn-danger">Sign Up</button>
+  </form>
+  <p>@ 2024 Copyright</p>  
+  <div class="social icons">
+    <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+  </div>
+</footer>
+<script src="script.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+</body>
+</html>
+   
