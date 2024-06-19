@@ -24,8 +24,31 @@ let slideIndex = 0;
     slides[slideIndex - 1].style.display = "block";  
     dots[slideIndex - 1].className += " active";
     
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
+    setTimeout(showSlides, 2000); 
   }
+
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    
+    
+    var formData = new FormData(this);
+    
+    
+    var responseDiv = document.getElementById('response');
+    responseDiv.classList.remove('d-none'); 
+    
+    
+    this.reset();
+  });
+  
+
+
+
+
+
+
+
+
 
 
 
