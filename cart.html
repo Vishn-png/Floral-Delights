@@ -1,23 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shopping Cart</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-  <a href="flowers.html"></a>
-</head>
-<body>
-  <div class="container">
-    <h1>Shopping Cart</h1>
-    <div id="cart-items"></div>
-    <button class="btn btn-success" id="checkout-btn">Checkout</button>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="cart.js"></script>
-  <script src="script.js"></script>
-</body>
+        <link
+          rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <title>Home</title>
+      </head>
+
+      <body>
+        <div class="page-header">
+          <div class="container text-center">
+            <a class="navbar-brand"></a>
+            <img src="Images/logo.jpg" alt="logo" />
+            <h1>Floral Delights</h1>
+            <canvas id="myCanvas" width="310" height="80">
+              Your browser does not support the HTML canvas tag.
+            </canvas>
+          </div>
+        </div>
+
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button
+                type="button"
+                class="navbar-toggle"
+                data-toggle="collapse"
+                data-target="#myNavbar"
+              >
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li class="active"><a href="flowers.html">Flowers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <a href="cart.html"
+                    ><span class="glyphicon glyphicon-shopping-cart"></span>
+                    Cart</a
+                  >
+                </li>
+                <li>
+                  <div class="input-group">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button">
+                        <span class="glyphicon glyphicon-search"></span>
+                      </button>
+                    </span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Search..."
+                    />
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <br /><br />
+        <div class="container">
+          <h1>Shopping Cart</h1>
+          <div id="cart-items"></div>
+          <button class="btn btn-danger" id="clear-cart-btn">Clear Cart</button>
+          <button class="btn btn-success" id="checkout-btn">Checkout</button>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="cart.js"></script>
+      </body>
+    </html>
+  </body>
 </html>
