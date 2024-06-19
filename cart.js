@@ -14,7 +14,7 @@ $(document).ready(function() {
     function displayCartItems() {
       let cartHtml = "";
       cartItems.forEach(item => {
-        cartHtml += `<div class="cart-item">${item.product} - $${item.price}</div>`;
+      cartHtml += `<div class="cart-item">${item.product} - $${item.price}</div>`;
       });
   
       $("#cart-items").html(cartHtml);
