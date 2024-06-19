@@ -1,7 +1,3 @@
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
-ctx.font = "18px Arial";
-ctx.fillText("Where Every Stem Tells a Story",25,50);
 
 let slideIndex = 0;
   showSlides();
