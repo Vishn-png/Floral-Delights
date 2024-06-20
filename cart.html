@@ -1,99 +1,80 @@
-
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="utf-8" />
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        <link
-          rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-        />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        />
+        <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
         <link rel="stylesheet" href="style.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <title>Home</title>
-      </head>
+        <title>cart</title>
+   </head>
 
-      <body>
-        <div class="container-fluid p-5 bg-primary text-white text-center">
-          <h1>Floral Delights</h1> <img src="Images/logo.jpg" alt="logo">
-          <p>Where Every Stem Tells a Story!</p> 
+
+<body>
+    <div class="container-fluid p-5 bg-primary text-white text-center">
+      <h1>Floral Delights</h1> <img src="Images/logo.jpg" alt="logo">
+      <p>Where Every Stem Tells a Story!</p> 
         </div>
 
-        <nav class="navbar navbar-inverse">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <button
-                type="button"
-                class="navbar-toggle"
-                data-toggle="collapse"
-                data-target="#myNavbar"
-              >
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+          <div class="navbar-header">
+        <button type="button"class="navbar-toggle"data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+       </div>
 
-            <div class="collapse navbar-collapse" id="myNavbar">
+      <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li class="active"><a href="flowers.html">Flowers</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="faq.html">FAQ</a></li>
+              <li class="active"><a href="index.html">Home</a></li>
+              <li class="active"><a href="flowers.html">Flowers</a></li>
+              <li class="active"><a href="contact.html">Contact</a></li>
+              <li class="active"><a href="faq.html">FAQ</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                <li>
-                  <a href="cart.html"
-                    ><span class="glyphicon glyphicon-shopping-cart"></span>
-                    Cart</a
-                  >
-                </li>
-                <li>
-                  <div class="input-group">
-                    <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">
-                        <span class="glyphicon glyphicon-search"></span>
-                      </button>
-                    </span>
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Search..."
-                    />
-                  </div>
+                <li class="active"><a href="signin.html">Sign In</a></li>
+                <li class="active"><a href="cart.html">
+                    <span class="glyphicon glyphicon-shopping-cart"></span> Cart
+                    <span id="cart-count" class="badge">0</span>
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
-        </nav>
+      </nav>
         <br /><br />
-        <div class="container">
-          <h1>Shopping Cart</h1>
-          <div id="cart-items"></div>
-          <br><br>
-          <button class="btn btn-success" id="checkout-btn">Checkout</button>
 
-          <br><br>
-          <button class="btn btn-danger" id="clear-cart-btn">Clear Cart</button>
+
+      <div class="container">
+        <h1>Shopping Cart</h1>
+        <img src="Images/shopping cart.jpeg" alt="cart">
+        <div id="cart-items"></div>
+        <br><br>
+        <button class="btn btn-success" id="checkout-btn">Checkout</button>
+        <br><br>
+        <button class="btn btn-danger" id="clear-cart-btn">Clear Cart</button>
         </div>
         <br>
-        <footer class="container-fluid text-center">
-          <form class="form-inline">Get deals:
-            <input type="email" class="form-control" size="50" placeholder="Email Address">
-            <button type="button" class="btn btn-danger">Sign Up</button>
-          </form>
-          <div class="social icons">
-            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-          </div>
-          <p>@ 2024 Floral Delights</p>  
+
+
+
+<footer class="container-fluid text-center">
+    <form class="form-inline">Get deals:
+      <input type="email" class="form-control" size="50" placeholder="Email Address">
+      <button type="button" class="btn btn-danger">Sign Up</button>
+   </form>
+
+      <div class="social icons">
+          <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+      </div>
+        <p>@ 2024 Floral Delights</p>  
     <div>
       <p class="footer-links">
         <a href="index.html">Home</a>
@@ -102,11 +83,9 @@
         <a href="contact.html">Contact</a>
       </p>
     </div>
-        </footer>
-
+    </footer>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="cart.js"></script>
-      </body>
-    </html>
   </body>
-</html>
+ </html>
+  

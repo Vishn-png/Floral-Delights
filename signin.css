@@ -1,0 +1,11 @@
+
+
+  .modal-title {
+    font-size: 24px; /* Increase font size for modal title */
+  }
+  .form-group label {
+    font-size: 18px; /* Increase font size for form labels */
+  }
+  .form-control {
+    font-size: 16px; /* Increase font size for form input fields */
+  }
