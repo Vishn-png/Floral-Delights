@@ -23,20 +23,22 @@ let slideIndex = 0;
     setTimeout(showSlides, 2000); 
   }
 
+
+
+
   document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); 
-    
-    
-    var formData = new FormData(this);
-    
+    event.preventDefault();
+
+     var formData = new FormData(this);
     
     var responseDiv = document.getElementById('response');
     responseDiv.classList.remove('d-none'); 
     
-    
     this.reset();
   });
   
+  
+ 
 
 
 
