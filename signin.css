@@ -1,11 +1,36 @@
+.modal fade {
+  display: none; /* Hide the modal by default */
+  position: fixed; /* Fixed position on the screen */
+  z-index: 1; /* Set the modal above everything else on the page */
+  left: 0;
+  top: 0;
+  width: 60%;
+  height: 60%;
+  overflow: auto; /* Allow scrolling within the modal */
+  background-color: rgba(239, 203, 203, 0.5); /* Black overlay with some transparency */
+}
+
+.modal-content {
+  font-size: large;
+  margin: 10% auto;
+  padding: 1.2rem;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 
-  .modal-title {
-    font-size: 24px; /* Increase font size for modal title */
-  }
-  .form-group label {
-    font-size: 18px; /* Increase font size for form labels */
-  }
-  .form-control {
-    font-size: 16px; /* Increase font size for form input fields */
-  }
+  
