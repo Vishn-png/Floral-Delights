@@ -6,10 +6,12 @@
   <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
     <link rel="stylesheet" href="style.css" />
-    <a href="signin.html"></a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Flowers</title>
   </head>
 <body>
+  
     <div class="container-fluid p-5 bg-primary text-white text-center">
       <h1>Floral Delights</h1> <img src="Images/logo.jpg" alt="logo">
       <p>Where Every Stem Tells a Story!</p> 
@@ -17,16 +19,17 @@
   <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle"data-toggle="collapse"data-target="#myNavbar">
+          <button type="button" class="navbar-toggle"data-toggle="collapse"data-target="#myNavbar"  title="Toggle navigation">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-            <span class="icon-bar"></span>   
+            <span class="icon-bar"></span> 
+                
         </button>
-        </div>
+    </div>
 
-        <div class="collapse navbar-collapse" id="myNavbar">
+    <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
             <li class="active"><a href="index.html">Home</a></li>
             <li class="active"><a href="flowers.html">Flowers</a></li>
@@ -36,12 +39,10 @@
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="signin.html">Sign In</a></li>
             <li class="active"><a href="cart.html">
-                <span class="glyphicon glyphicon-shopping-cart"></span> Cart
-                <span id="cart-count" class="badge">0</span>
-              </a>
-            </li>
+              <span class="glyphicon glyphicon-shopping-cart"></span> Cart
+              <span id="cart-count" class="badge">0</span></a></li>
           </ul>
-          </div>
+        </div>
       </div>
     </nav>
 

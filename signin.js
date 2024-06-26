@@ -21,8 +21,10 @@ $('#signInForm').submit(function(event) {
    $('#password').val('');
 
    // Close the modal
-   $('#signInModalUnique').modal('hide');
  });
 
-
+ function signIn() {
+  // Add your sign-in logic here
+  alert("Signed in successfully!");
+}
 
