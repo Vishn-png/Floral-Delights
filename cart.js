@@ -35,6 +35,26 @@ $(document).ready(function () {
     $("#cart-count").text(cartItems.length);
   }
 
+
+$("#total-amount-btn").click(function() {
+    let cartHtml = "";
+    let totalAmount = 0;
+
+    cartItems.forEach((item) => {
+      cartHtml += `<div class="cart-item">${item.product} - $${item.price}</div>`;
+      totalAmount += item.price;
+    });
+
+    cartHtml += `<div class="cart-total">Total Amount: $${totalAmount}</div>`;
+
+    $("#cart-items").html(cartHtml);
+});
+
+
+
+
+
+
   $("#checkout-btn").click(function () {
     alert("Thank you for your purchase!");
     // Clear cartItems and localStorage

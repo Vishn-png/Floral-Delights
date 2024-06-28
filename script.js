@@ -39,7 +39,13 @@ let slideIndex = 0;
   
   
  
-
+  document.getElementById('message').addEventListener('input', function() {
+    var message = this.value;
+    var words = message.trim().split(/\s+/);
+    if (words.length > 20) {
+      this.value = words.slice(0, 50).join(' ');
+    }
+  });
 
 
 
